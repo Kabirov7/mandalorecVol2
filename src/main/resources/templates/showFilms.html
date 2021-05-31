@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Films</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h2>List of Films</h2>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Link</th>
+    </tr>
+    <tr th:each="film : ${films}">
+        <td th:text="${film.id}">Id</td>
+        <td th:text="${film.title}">Title</td>
+        <td th:text="${film.link}">Link</td>
+    </tr>
+</table>
+</body>
+</html>
